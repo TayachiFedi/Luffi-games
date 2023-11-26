@@ -5,11 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { FormsModule } from '@angular/forms';
+import { AjoutComponent } from './ajout/ajout.component';
+import { ListHeroesComponent } from './list-heroes/list-heroes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
+    AjoutComponent,
+    ListHeroesComponent,
    
   ],
   imports: [

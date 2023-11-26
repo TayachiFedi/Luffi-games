@@ -27,6 +27,8 @@ export class FirstComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
+  
 
 }
