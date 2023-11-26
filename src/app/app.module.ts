@@ -8,6 +8,7 @@ import { AjoutComponent } from './ajout/ajout.component';
 import { ListHeroesComponent } from './list-heroes/list-heroes.component';
 import { HeaderComponent } from './header/header.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NotFoundComponent } from './not-found/not-found.component';
 /**
  * The main module of the application.
  */
@@ -18,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
     ListHeroesComponent,
     AppComponent,
     HeaderComponent,
+    NotFoundComponent,
 
   ],
   imports: [

@@ -19,5 +19,7 @@ export class SharedService {
   GetAllHeros(): Observable<any> {
     return this.http.get(this.url + 'hero/all');
   }
-
+  deleteHero(id: any): Observable<any> {
+    return this.http.delete(this.url + 'hero/supprimer/' + id);
+  }
 }
