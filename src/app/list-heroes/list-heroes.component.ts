@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from '../shared.service';
 
 @Component({
   selector: 'app-list-heroes',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class ListHeroesComponent {
 
+
+constructor(public _shared: SharedService) {}
 }
