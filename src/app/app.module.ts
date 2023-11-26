@@ -9,6 +9,7 @@ import { ListHeroesComponent } from './list-heroes/list-heroes.component';
 import { HeaderComponent } from './header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { UpdateComponent } from './update/update.component';
 /**
  * The main module of the application.
  */
@@ -20,6 +21,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     AppComponent,
     HeaderComponent,
     NotFoundComponent,
+    UpdateComponent,
 
   ],
   imports: [

@@ -22,4 +22,11 @@ export class SharedService {
   deleteHero(id: any): Observable<any> {
     return this.http.delete(this.url + 'hero/supprimer/' + id);
   }
+  getHerobyId(id:any): Observable<any> {
+    return this.http.get(this.url + 'hero/getbyid/' + id);
+  }
+  updateHero(id:any, hero:any): Observable<any> {
+    return this.http.put(this.url + 'hero/update/' + id, hero);
+  }
+
 }
