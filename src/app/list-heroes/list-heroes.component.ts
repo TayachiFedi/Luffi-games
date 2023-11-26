@@ -9,5 +9,19 @@ import { SharedService } from '../shared.service';
 export class ListHeroesComponent {
 
 
-constructor(public _shared: SharedService) {}
+constructor(public _shared: SharedService) {
+
+  
+}
+ngOnInit(): void {
+ this._shared.GetAllHeros()
+  .subscribe(
+    res=>{
+      this._shared.heros = res;
+    },
+    err=>{
+      console.log(err);
+    }
+  )
+}
 }

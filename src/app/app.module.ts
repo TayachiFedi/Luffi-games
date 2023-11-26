@@ -7,7 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { AjoutComponent } from './ajout/ajout.component';
 import { ListHeroesComponent } from './list-heroes/list-heroes.component';
 import { HeaderComponent } from './header/header.component';
-
+import { HttpClientModule } from '@angular/common/http';
 /**
  * The main module of the application.
  */
@@ -20,11 +20,11 @@ import { HeaderComponent } from './header/header.component';
     HeaderComponent,
 
   ],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
