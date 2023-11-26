@@ -4,7 +4,7 @@ import { AjoutComponent } from './ajout/ajout.component';
 import { ListHeroesComponent } from './list-heroes/list-heroes.component';
 
 const routes: Routes = [
-
+  {path: '', redirectTo: 'ajout', pathMatch: 'full'},
   {path: 'ajout', component: AjoutComponent},
   {path:'list', component: ListHeroesComponent},
 ];
